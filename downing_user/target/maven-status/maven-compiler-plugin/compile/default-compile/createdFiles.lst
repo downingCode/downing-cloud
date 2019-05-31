@@ -1,0 +1,5 @@
+com\downing\user\controller\UsersController.class
+com\downing\user\entity\Users.class
+com\downing\user\UserApplication.class
+com\downing\user\dao\UsersDao.class
+com\downing\user\service\UsersService.class
