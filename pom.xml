@@ -13,6 +13,7 @@
         <module>downing_user</module>
         <module>downing_common</module>
         <module>downing_mq</module>
+        <module>downing_search</module>
     </modules>
 
     <parent>
