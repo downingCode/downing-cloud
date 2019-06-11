@@ -3,3 +3,7 @@ server:
 spring:
   application:
     name: downing-mq
+  rabbitmq:
+    host: 129.28.193.52
+    username: admin
+    password: admin
