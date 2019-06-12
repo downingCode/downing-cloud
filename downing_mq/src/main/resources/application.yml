@@ -4,6 +4,6 @@ spring:
   application:
     name: downing-mq
   rabbitmq:
-    host: 129.28.193.52
+    host: localhost
     username: admin
     password: admin

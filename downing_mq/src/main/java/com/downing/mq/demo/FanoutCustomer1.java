@@ -4,18 +4,16 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
-
 /**
  * @author downing
- * @descript 消息监听处理器
- * 指定监听名为directTest的queues
+ * @descript
  */
-@RabbitListener(queues = "directTest")
 @Component
-public class DirectCustomer {
+@RabbitListener(queues = "fanout1")
+public class FanoutCustomer1 {
 
     @RabbitHandler
     public void receiveMessage(String message) {
-        System.out.println("directTest收到消息：" + message);
+        System.out.println("fanout1接受到的消息:" + message);
     }
 }
