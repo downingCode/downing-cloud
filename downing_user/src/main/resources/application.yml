@@ -5,7 +5,7 @@ spring:
     name: downing-user
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/down?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true&useTimezone=true&serverTimezone=GMT%2b8
+    url: jdbc:mysql://localhost:3306/downing_boot?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true&useTimezone=true&serverTimezone=GMT%2b8
     username: root
     password:
     hikari:
@@ -15,3 +15,7 @@ spring:
     properties:
       hibernate:
         enable_lazy_load_no_trans: true
+eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:9999/eureka

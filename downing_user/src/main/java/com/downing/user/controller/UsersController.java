@@ -16,7 +16,6 @@ public class UsersController {
     @Autowired
     private UsersService usersService;
 
-
     @GetMapping("/{id}")
     public DowningResult findById(@PathVariable Integer id) {
         return new DowningResult(200, "获取成功", usersService.findById(id));
